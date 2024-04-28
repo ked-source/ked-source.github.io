@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #home {
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    height: 120vh; /* Make the home section cover the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* navbar */
+.navbar {
+    width: 100%;
+    overflow: auto;
+    justify-content: center;
+    position: absolute;
+    background-color: #241104;
+    border-radius: 80px;
+    padding: 10px;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 3%;
+    text-align: center;
+    position: fixed;
+  }
+  
+  .navbar a {
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    background-color: rgb(255, 213, 183);
+    color: #000;
+    border-radius: 80px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin: 0;
+  }
+  
+  .navbar li img {
+    height: 30px;
+    width: 30px;
+    justify-content: flex-start;
+  }
+  
+  
+  .promo-text {
+    position: absolute;
+    top: 50%; /* Adjust these to center the text vertically */
+    left: 3%;
+    transform: translateY(-50%); /* Center the div by its own height */
+    color: white;
+    text-align: left;
+    text-align: justify;
+  }
+  
+  .promo-text h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .promo-text p {
+    font-size: 1em;
+    max-width: 400px;
+    line-height: 1.5;
+  }
+  
+
+
+
+  #athletes {
+    background-image: url('sec2.png'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: space-around;
+    align-items: end; /* Align the buttons at the bottom */
+    padding-bottom: 50px; /* Space from the bottom */
+  }
+  
+  .select-button {
+    padding: 10px 20px;
+    margin-top: 20px; /* Space above the button */
+    background-color: #00ff00; /* Neon green background */
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .select-button:hover {
+    background-color: #009900; /* Darker green on hover */
+  }
+  
+  .athlete {
+    flex-basis: 33.333%; /* Divide the space evenly */
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    z-index: 10; /* Ensures the overlay is on top of other content */
+  }
+  
+  /* Overlay content styles */
+  
+  .overlay-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  /* Close button styles */
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
