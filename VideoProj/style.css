@@ -12,55 +12,82 @@
     background-image: url('background.png');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Make the home section cover the full viewport height */
+    height: 120vh; /* Make the home section cover the full viewport height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   
-  .navbar {
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    padding: 1em 0;
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
+  /* navbar */
+.navbar {
+    width: 100%;
+    overflow: auto;
     justify-content: center;
+    position: absolute;
+    background-color: #241104;
+    border-radius: 80px;
+    padding: 10px;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 3%;
+    text-align: center;
+    position: fixed;
   }
   
-  .nav-list li {
-    margin: 0 15px;
-  }
-  
-  .nav-list a {
+  .navbar a {
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: #ffffff;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
   }
   
-  .nav-list a:hover {
-    color: #00ff00;
+  .navbar a:hover {
+    background-color: rgb(255, 213, 183);
+    color: #000;
+    border-radius: 80px;
   }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin: 0;
+  }
+  
+  .navbar li img {
+    height: 30px;
+    width: 30px;
+    justify-content: flex-start;
+  }
+  
   
   .promo-text {
     position: absolute;
     top: 50%; /* Adjust these to center the text vertically */
-    left: 10%;
+    left: 3%;
     transform: translateY(-50%); /* Center the div by its own height */
     color: white;
     text-align: left;
+    text-align: justify;
   }
   
   .promo-text h1 {
-    font-size: 3em;
+    font-size: 1.5em;
     margin-bottom: 0.5em;
   }
   
   .promo-text p {
-    font-size: 1.5em;
+    font-size: 1em;
     max-width: 400px;
     line-height: 1.5;
   }
