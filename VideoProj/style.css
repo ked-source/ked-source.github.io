@@ -24,14 +24,9 @@
     overflow: auto;
     justify-content: center;
     position: absolute;
-    background-color: #241104;
-    border-radius: 80px;
     padding: 10px;
     width: 40%;
-    margin-left: 30%;
-    margin-top: 3%;
     text-align: center;
-    position: fixed;
   }
   
   .navbar a {
@@ -48,8 +43,8 @@
   }
   
   .navbar a:hover {
-    background-color: rgb(255, 213, 183);
-    color: #000;
+    background-color: orange;
+    color: #ffffff;
     border-radius: 80px;
   }
   
@@ -73,9 +68,8 @@
   
   .promo-text {
     position: absolute;
-    top: 50%; /* Adjust these to center the text vertically */
-    left: 3%;
-    transform: translateY(-50%); /* Center the div by its own height */
+    top: 30%; /* Adjust these to center the text vertically */
+    left: 4%;
     color: white;
     text-align: left;
     text-align: justify;
@@ -92,9 +86,6 @@
     line-height: 1.5;
   }
   
-
-
-
   #athletes {
     background-image: url('sec2.png'); /* Replace with the path to your image */
     background-size: cover;
@@ -126,20 +117,6 @@
     flex-basis: 33.333%; /* Divide the space evenly */
     text-align: center;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .overlay {
     display: none; /* Hidden by default */
@@ -173,3 +150,21 @@
     cursor: pointer;
   }
   
+  #About{
+    z-index: 2px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 40vw;
+    background-color: black;
+    background-image: url(section3.png);
+    background-size: cover;
+    margin-top: -5px;
+  }
+
+  #About div img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-top: 30%;
+  }
